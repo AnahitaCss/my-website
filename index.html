@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Information Form</h1>
+        <form id="studentForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required><br><br>
+            
+            <label for="field">Field of Study:</label>
+            <select id="field" name="field" required>
+                <option value="Medicine">Medicine</option>
+                <option value="Law">Law</option>
+            </select><br><br>
+            
+            <label for="studyTime">Study Time per Day:</label><br>
+            <input type="radio" id="study1" name="studyTime" value="Less than 1 hour" required>
+            <label for="study1">Less than 1 hour</label><br>
+            <input type="radio" id="study2" name="studyTime" value="1 to 2 hours" required>
+            <label for="study2">1 to 2 hours</label><br>
+            <input type="radio" id="study3" name="studyTime" value="2 to 4 hours" required>
+            <label for="study3">2 to 4 hours</label><br>
+            <input type="radio" id="study4" name="studyTime" value="More than 4 hours" required>
+            <label for="study4">More than 4 hours</label><br><br>
+
+            <button type="submit">Submit Information</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
